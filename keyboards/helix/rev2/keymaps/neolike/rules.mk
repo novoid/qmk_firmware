@@ -7,6 +7,7 @@
 #
 LTO_ENABLE = no  # if firmware size over limit, try this option
 UNICODE_ENABLE = yes     # Unicode
+MOUSEKEY_ENABLE = yes
 
 # Helix Spacific Build Options
 # you can uncomment and edit follows 7 Variables

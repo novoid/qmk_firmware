@@ -4,7 +4,7 @@ For me, the maximum productivity tool is a portable split ortholinear 60% keyboa
 
 ## Layout
 
-The layout is created in http://www.keyboard-layout-editor.com/. The data is in [neolike.kbd.json](neolike.kbd.json). The layout is based on the Neo2 layout, but because this 60% keyboard (you could build a 40% 4-row Helix, but then, this layout wouldn't work) has less keys they a 100% keyboard and I had to include mouse mode and some special QMK functions, some Neo2-characters will not be accessible. Also, there's no right Ctrl key and since I had to make the two shifted layers different QMK layers to implement Neo2's caps-lock function, pressing a shift key will not be noticed by the host unless you press another key with it.
+The layout is created in http://www.keyboard-layout-editor.com/. The data is in [neolike.kbd.json](neolike.kbd.json). The layout is based on the Neo2 layout as it worked on my Kinesis Advantage2, but because this 60% keyboard (you could build a 40% 4-row Helix, but then, this layout wouldn't work) has less keys they a 100% keyboard and I had to include mouse mode and some special QMK functions, some Neo2-characters will not be accessible. Also, there's no right Ctrl key and since I had to make the two shifted layers different QMK layers to implement Neo2's caps-lock function, pressing a shift key will not be noticed by the host unless you press another key with it.
 
 All characters that are no part of the standard US keyboard will be sent out using QMK's Unicode function. For that to work, you have to switch to IBus mode (Mod5-x) for Linux, Mac mode (Mod5-u) for Macs and iDevices and WinC mode (Mod5-ü) for Windows, and Windows devices need WinCompose running.
 
