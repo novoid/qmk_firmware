@@ -1,3 +1,5 @@
+This clone is for developing the [Neo2](https://neo-layout.org/)-like layout for the [Helix keyboard](https://github.com/MakotoKurauchi/helix). More info [here](keyboards/helix/rev2/keymaps/neolike).
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
