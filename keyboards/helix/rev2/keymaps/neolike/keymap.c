@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  MO(3), KC_U, KC_I, KC_A, KC_E, KC_O,
                  KC_S, KC_N, KC_R, KC_T, KC_D, KC_Y,
                  MO(1), UC(0xFC), UC(0xF6), UC(0xE4), KC_P, KC_Z, KC_NO,
-                 KC_NO, KC_B, KC_M, KC_COMM, KC_DOT, KC_J, MO(2),
+                 KC_N, KC_B, KC_M, KC_COMM, KC_DOT, KC_J, MO(2),
                  KC_LCTL, KC_LALT, MO(4), KC_LEFT, KC_RGHT, KC_BSPC, KC_DEL,
                  KC_ENT, KC_SPC, KC_UP, KC_DOWN, UC(0xDF), KC_RGUI, KC_RALT),
 
@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  MO(5), LSFT(KC_U), LSFT(KC_I), LSFT(KC_A), LSFT(KC_E), LSFT(KC_O),
                  LSFT(KC_S), LSFT(KC_N), LSFT(KC_R), LSFT(KC_T), LSFT(KC_D), LSFT(KC_Y),
                  KC_NO, UC(0xDC), UC(0xD6), UC(0xC4), LSFT(KC_P), LSFT(KC_Z), KC_NO,
-                 KC_NO, LSFT(KC_B), LSFT(KC_M), UC(0x2013), UC(0x2022), LSFT(KC_J), KC_CAPS,
+                 LSFT(KC_N), LSFT(KC_B), LSFT(KC_M), UC(0x2013), UC(0x2022), LSFT(KC_J), KC_CAPS,
                  LSFT(KC_LCTL), LSFT(KC_LALT), KC_NO, LSFT(KC_LEFT), LSFT(KC_RGHT), LSFT(KC_BSPC), LSFT(KC_DEL),
                  LSFT(KC_ENT), LSFT(KC_SPC), LSFT(KC_UP), LSFT(KC_DOWN), UC(0x1E9E), LSFT(KC_RGUI), LSFT(KC_RALT)),
 
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  MO(5), RSFT(KC_U), RSFT(KC_I), RSFT(KC_A), RSFT(KC_E), RSFT(KC_O),
                  RSFT(KC_S), RSFT(KC_N), RSFT(KC_R), RSFT(KC_T), RSFT(KC_D), RSFT(KC_Y),
                  KC_CAPS, UC(0xDC), UC(0xD6), UC(0xC4), RSFT(KC_P), RSFT(KC_Z), KC_NO,
-                 KC_NO, RSFT(KC_B), RSFT(KC_M), UC(0x2013), UC(0x2022), RSFT(KC_J), KC_NO,
+                 RSFT(KC_N), RSFT(KC_B), RSFT(KC_M), UC(0x2013), UC(0x2022), RSFT(KC_J), KC_NO,
                  RSFT(KC_LCTL), RSFT(KC_LALT), KC_NO, RSFT(KC_LEFT), RSFT(KC_RGHT), RSFT(KC_BSPC), RSFT(KC_DEL),
                  RSFT(KC_ENT), RSFT(KC_SPC), RSFT(KC_UP), RSFT(KC_DOWN), UC(0x1E9E), RSFT(KC_RGUI), RSFT(KC_RALT)),
 
@@ -110,8 +110,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  KC_LCTL, KC_LALT, KC_NO, KC_LEFT, KC_RGHT, KC_BSPC, KC_DEL,
                  KC_NO, KC_P0, KC_UP, KC_DOWN, KC_NO, KC_RGUI, KC_RALT),
     
-    [5] = LAYOUT(RGB_TOG, RGB_MOD, KC_NO, KC_NO, KC_NO, KC_NO,
-                 KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    [5] = LAYOUT(RGB_TOG, RGB_MOD, RGB_RMOD, RGB_HUI, RGB_HUD, RGB_SAI,
+                 RGB_SAD, RGB_VAI, RGB_VAD, RGB_SPI, RGB_SPD, RGB_M_P,
                  KC_NO, UC_M_LN, KC_NO, KC_NO, KC_NO, KC_NO,
                  KC_NO, KC_BTN1, KC_MS_U, KC_BTN2, KC_WH_U, KC_NO,
                  KC_NO, UC_M_MA, KC_NO, KC_NO, KC_NO, KC_NO,
