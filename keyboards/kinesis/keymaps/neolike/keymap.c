@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "print.h"
 
 #define QWERTY 0 // Base qwerty
 #define NUMPAD 1 // NumPad layer for QWERTY
@@ -72,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    _______,
                            _______,_______,_______,
 
-    _______,_______,_______,_______,_______,_______,_______, DF(QWERTY), MO(PROGRAM),
+    _______,KC_MPRV,KC_MPLY,KC_MNXT,KC__MUTE,KC__VOLDOWN,KC__VOLUP, DF(QWERTY), MO(PROGRAM),
 	_______,KC_NLCK,KC_PEQL,KC_PEQL,KC_PAST,_______,
 	_______,KC_P7  ,KC_P8  ,KC_P9  ,KC_PMNS,_______,
 	_______,KC_P4  ,KC_P5  ,KC_P6  ,KC_PPLS,_______,
@@ -94,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    _______,
                            _______,_______,_______,
 
-    RESET,_______,_______,_______,_______,_______,_______,_______,_______,
+    RESET,KC_MPRV,KC_MPLY,KC_MNXT,KC__MUTE,KC__VOLDOWN,KC__VOLUP,_______,_______,
 	_______,_______,_______,_______,_______,_______,
 	_______,_______,_______,_______,_______,_______,
 	_______,_______,_______,_______,_______,_______,
@@ -116,7 +117,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    KC_HOME,
                            KC_BSPC,KC_DEL ,KC_END ,
 
-    KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_PSCR ,KC_SLCK  ,KC_PAUS, XXXXXXX, MO(LAYER4),
+    KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_PSCR ,KC_SLCK  ,KC_PAUS, KC_RALT, MO(LAYER4),
 	KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,KC_MINS,
 	 KC_K, KC_H, KC_G, KC_F, KC_Q, MO(LAYER3),
 	KC_S, KC_N, KC_R, KC_T, KC_D, KC_Y,
@@ -156,38 +157,60 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            XXXXXXX, KC_BSLS, KC_SLSH, KC_LCBR, KC_RCBR, KC_ASTR,
            MO(LAYER5), KC_HASH, KC_DLR, KC_PIPE, KC_TILD, KC_GRV,
                    XXXXXXX ,MO(LAYER6),KC_LEFT,KC_RGHT,
-			   KC_LCTL,KC_LALT,
-                                   KC_HOME,
-                           KC_BSPC,KC_DEL ,KC_END ,
+			   _______,_______,
+                                   _______,
+                           _______,_______,_______,
 
-    KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_PSCR ,KC_SLCK  ,KC_PAUS, XXXXXXX, MO(LAYER6),
+    KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_PSCR ,KC_SLCK  ,KC_PAUS, _______, MO(LAYER6),
 	UC(0xA2), UC(0xA5), UC(0x201A), UC(0x2018), UC(0x2019), XXXXXXX,
 	 KC_EXLM, KC_LT, KC_GT, KC_EQL, KC_AMPR, XXXXXXX,
 	 KC_QUES, KC_LPRN, KC_RPRN, KC_MINS, KC_COLN, KC_AT,
 	 KC_PLUS, KC_PERC, KC_DQUO, KC_QUOT, KC_SCLN, MO(LAYER5),
 		KC_UP  ,KC_DOWN, UC(0x17F),UC(0x338),
-           KC_RGUI,KC_RCTL,
-           KC_PGUP,
-           KC_PGDN,KC_ENTER ,KC_SPC
+           _______,_______,
+           _______,
+           _______,_______,_______
     ),
 
 [LAYER4] = LAYOUT(
-           _______,_______,_______,DF(QWERTY),_______,UC_M_MA,UC_M_LN,UC_M_WC,_______,
+           _______,_______,_______,DF(QWERTY),UC_M_WI,UC_M_MA,UC_M_LN,UC_M_WC,_______,
+           UC(0x308),_______,_______,_______,_______,_______,
            _______,_______,_______,_______,_______,_______,
            _______,_______,_______,_______,_______,_______,
            _______,_______,_______,_______,_______,_______,
-           _______,_______,_______,_______,_______,_______,
-                   _______,_______,_______,_______,
+                   UC(0x307),_______,_______,_______,
 			   _______,_______,
                                    _______,
                            _______,_______,_______,
 
-    RESET,_______,_______,_______,KC__MUTE,KC__VOLDOWN,KC__VOLUP,_______,_______,
+    RESET,KC_MPRV,KC_MPLY,KC_MNXT,KC__MUTE,KC__VOLDOWN,KC__VOLUP,_______,_______,
+	_______,_______,_______,KC_PSLS,KC_PAST,KC_PMNS,
+	_______,KC_KP_7,KC_KP_8,KC_KP_9,KC_PPLS,_______,
+	_______,KC_KP_4,KC_KP_5,KC_KP_6,KC_PDOT,_______,
+	_______,KC_KP_1,KC_KP_2,KC_KP_3,_______,_______,
+		_______,_______,_______,UC(0x30B),
+           _______,_______,
+           _______,
+           _______,_______,KC_KP_0
+    ),
+
+[LAYER5] = LAYOUT(
+           _______,_______,_______,DF(QWERTY),UC_M_WI,UC_M_MA,UC_M_LN,UC_M_WC,_______,
+           UC(0x308),_______,_______,_______,_______,_______,
+           _______,_______,_______,_______,_______,_______,
+           _______,_______,_______,_______,_______,_______,
+           _______,_______,_______,_______,_______,_______,
+                   UC(0x307),_______,_______,_______,
+			   _______,_______,
+                                   _______,
+                           _______,_______,_______,
+
+    RESET,KC_MPRV,KC_MPLY,KC_MNXT,KC__MUTE,KC__VOLDOWN,KC__VOLUP,_______,_______,
 	_______,_______,_______,_______,_______,_______,
 	_______,_______,_______,_______,_______,_______,
 	_______,_______,_______,_______,_______,_______,
 	_______,_______,_______,_______,_______,_______,
-		_______,_______,_______,_______,
+		_______,_______,_______,UC(0x30B),
            _______,_______,
            _______,
            _______,_______,_______
@@ -206,6 +229,26 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
+layer_state_t layer_state_set_user(layer_state_t state) {
+  printf("layer_state_set_user running\n");
+  switch (get_highest_layer(state)) {
+    case NUMPAD:
+      writePin(C3, 0);
+      break;
+    default:
+      writePin(C3, 1);
+      break;
+  }
+  return state;
+}
+
 void led_set_user(uint8_t usb_led) {
- 
+  
+}
+
+bool led_update_user(led_t led_state) {
+  writePin(C4, !led_state.scroll_lock);
+  writePin(C5, !led_state.num_lock);
+  writePin(C1, !led_state.caps_lock);
+  return false;
 }
