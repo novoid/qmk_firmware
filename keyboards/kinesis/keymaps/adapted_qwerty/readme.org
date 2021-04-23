@@ -1,0 +1,10 @@
+* Kinesis Advantage2 LF: QWERTY adapted
+
+This is a modification of the [[https://github.com/deBaer/qmk_firmware/tree/kintneolike/keyboards/kinesis/keymaps/neolike][neolike by deBaer]] just because it was the first firmware I was flashing. I don't use Neo(2) but I learned from deBaer's customization a lot.
+
+This layout will be decriben in more details soon. I will blog about it on https://Karl-Voit.at - you might like to read:
+- https://karl-voit.at/2021/01/30/keyboards
+- https://karl-voit.at/2021/02/21/switch-tester
+- https://karl-voit.at/2021/03/21/advantage2-plans/
+
+You can see and follow my layout on http://www.keyboard-layout-editor.com/#/gists/03517c889bd6a6bafbba00554c4e8b76
