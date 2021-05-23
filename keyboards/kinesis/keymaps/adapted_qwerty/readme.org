@@ -1,18 +1,62 @@
 * Kinesis Advantage2 LF: adapted QWERTY 
 
-This is a modification of the [[https://github.com/deBaer/qmk_firmware/tree/kintneolike/keyboards/kinesis/keymaps/neolike][neolike by deBaer]] just because it was the first firmware I was flashing. I don't use Neo(2) but I learned from deBaer's customization a lot.
+This is a modification of the [[https://github.com/deBaer/qmk_firmware/tree/kintneolike/keyboards/kinesis/keymaps/neolike][neolike by deBaer]] just because it was
+the first firmware I was flashing in my Teensy chip. I don't use
+Neo(2) but I learned from deBaer's customization a lot.
 
-The layout will be decribed in more details soon. I will blog about it on https://Karl-Voit.at - you might like to read:
+The layout will be described in more details soon. I will blog about it
+on https://Karl-Voit.at - you might like to read:
 
 - https://karl-voit.at/2021/01/30/keyboards
 - https://karl-voit.at/2021/02/21/switch-tester
 - https://karl-voit.at/2021/03/21/advantage2-plans/
 
-You can see a graphical representation and follow my development of the layout on http://www.keyboard-layout-editor.com/#/gists/03517c889bd6a6bafbba00554c4e8b76
+** General approach of this layout
 
+Since I refrained from trying an alternative layout like Neo2 or KOY,
+I started with standard QWERTY and US international layout with dead
+keys.
+
+[[https://karl-voit.at/2021/03/21/advantage2-plans/][I soon found out that the Advantage2 is not well suited for a lot of
+keyboard shortcuts I frequently use]]. After writing down all those hard
+to type combinations I need, I just added an additional layer by
+re-mapping the =End= and the =Page Down= keys as modifiers.
+
+Furthermore, I swapped the position of the minus and the equal keys
+since I could not find any argument for them being placed like Kinesis
+did but many reasons to swap them.
+
+On the additional layer, I mapped all those hard to reach shortcuts as
+straight forward as possible. Please note that the requirements for
+your shortcuts are most certain completely different. You might not
+want to use my additional layer setup but find out about your
+shortcuts that are hard to type in this keyboard.
+
+You can see a graphical representation and follow my development of
+the layout on
+http://www.keyboard-layout-editor.com/#/gists/03517c889bd6a6bafbba00554c4e8b76
+
+file:current_layout.png
+
+** How to flash this layout
+
+1. Go to the root directory of this repository
+2. Compile and flash:
+   : make kinesis/kint2pp:adapted_qwerty:flash
+3. Press the button on your Teensy when computer tells you to do so.
+
+** How to modify this layout
+
+- Edit =keymap.c= in this directory
+- Learn from pages like https://docs.qmk.fm/#/?id=get-started
+- Flash the layout (see above)
+
+** How to modify a Kinesis Advantage2 for QMK
+
+I followed [[https://www.youtube.com/watch?v=Js5lXJGMgDs][this excellent (German) video]] and ordered [[https://orthkb.work/?product=kint-kinesis-keyboard-controller][the QMK set from his page]] in 2021-03.
+
+The modification went smooth even though I'm not very skilled in soldering.
 
 ** Todos 
 
-- [ ] Tutorial for beginners: how to flash your first QMK
-- [ ] link deBaer's webshop and video for QMK set
 - [ ] Layout-Layer switch diagram in PlantUML
