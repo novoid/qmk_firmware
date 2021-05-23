@@ -120,7 +120,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            _______,_______,_______,LCTL(LSFT(KC_C)),LCTL(LSFT(KC_V)),KC_END,
 
 /*                 KC_GRV ,KC_NUBS,KC_LEFT,KC_RGHT,                                         */
-                   _______,_______,LCTL(KC_LEFT),LCTL(KC_RIGHT),
+                   LGUI(KC_L),_______,LCTL(KC_LEFT),LCTL(KC_RIGHT),
 
 /*      		   KC_LCTL,KC_LALT,                                                 */
 			   _______,_______,
