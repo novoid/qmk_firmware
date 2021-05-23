@@ -36,7 +36,7 @@ You can see a graphical representation and follow my development of
 the layout on
 http://www.keyboard-layout-editor.com/#/gists/03517c889bd6a6bafbba00554c4e8b76
 
-file:current_layout.png
+[[file:current_layout.png]]
 
 ** How to flash this layout
 
