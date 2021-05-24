@@ -10,6 +10,9 @@ on https://Karl-Voit.at - you might like to read:
 - https://karl-voit.at/2021/01/30/keyboards
 - https://karl-voit.at/2021/02/21/switch-tester
 - https://karl-voit.at/2021/03/21/advantage2-plans/
+  - This article explains the reasons for my approach
+- https://karl-voit.at/2021/05/23/advantage2-modifications
+  - This article reflects the ideas of this layout
 
 ** General approach of this layout
 
