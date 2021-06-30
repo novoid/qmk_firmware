@@ -114,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            ALT_TAB,LCTL(KC_F9),LCTL(KC_F10),LCTL(KC_F11),LCTL(KC_F12),KC_HOME,
 
 /*         KC_CAPS,KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_G   ,                                 */
-           KC_ESC, _______,ALGR(KC_S),_______,_______,_______,
+           _______, _______,ALGR(KC_S),_______,_______,_______,
 
 /*         KC_LSFT,KC_Z   ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,                                 */
            _______,_______,_______,LCTL(LSFT(KC_C)),LCTL(LSFT(KC_V)),KC_END,
