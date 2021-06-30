@@ -111,10 +111,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            _______,ALGR(KC_1),ALGR(KC_2),ALGR(KC_3),ALGR(KC_4),ALGR(KC_5),
 
 /*         KC_TAB, KC_Q   ,KC_W   ,KC_E   ,KC_R   ,KC_T   ,                                 */
-           ALT_TAB,ALGR(KC_S),KC_LGUI,KC_ESCAPE,_______,KC_HOME,
+           ALT_TAB,LCTL(KC_F9),LCTL(KC_F10),LCTL(KC_F11),LCTL(KC_F12),KC_HOME,
 
 /*         KC_CAPS,KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_G   ,                                 */
-           _______,LCTL(KC_F9),LCTL(KC_F10),LCTL(KC_F11),LCTL(KC_F12),_______,
+           KC_ESC, _______,ALGR(KC_S),_______,_______,_______,
 
 /*         KC_LSFT,KC_Z   ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,                                 */
            _______,_______,_______,LCTL(LSFT(KC_C)),LCTL(LSFT(KC_V)),KC_END,
@@ -139,10 +139,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ALGR(KC_6),ALGR(KC_7),ALGR(KC_8),ALGR(KC_9),ALGR(KC_0),_______,
 
 /*      KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,KC_BSLS,                                    */
-           _______,LCTL(LSFT(KC_MINUS)),_______,LALT(KC_F2),LGUI(KC_P),_______,
+           _______,LCTL(LSFT(KC_MINUS)),KC_UP,LALT(KC_F2),LGUI(KC_P),_______,
 
 /*      KC_H   ,KC_J   ,KC_K   ,KC_L    ,KC_SCLN,KC_QUOT,                                    */
-	    KC_LEFT,KC_DOWN,KC_UP,  KC_RIGHT,_______,_______,
+	    _______,KC_LEFT,KC_DOWN,KC_RIGHT,_______,_______,
 
 /*      KC_N   ,KC_M   ,KC_COMM,KC_DOT ,KC_SLSH,KC_RSFT,                                    */
 	_______,_______,LGUI(KC_LEFT),LGUI(KC_RIGHT),LGUI(KC_UP),_______,
